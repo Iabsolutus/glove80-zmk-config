@@ -38,8 +38,7 @@
     underglow-layer {
         compatible = "zmk,underglow-layer";
 
-        lower_indicator {
-            /* Layer 1 (Lower) -> білий LED лише для Layer key (тимчасово presumed slot #3). */
+        lower {
             bindings = <
                 &ug ___  &ug ___  &ug WHITE  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
                 &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
