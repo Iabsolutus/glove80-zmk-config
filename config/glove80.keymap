@@ -36,24 +36,19 @@
 
 / {
     underglow-layer {
-        compatible  = "zmk,underglow-layer";
+        compatible = "zmk,underglow-layer";
 
-        lower {
+        lower_indicator {
+            /* Layer 1 (Lower) -> білий LED лише для Layer key (тимчасово presumed slot #3). */
             bindings = <
-        /* ---------------- LEFT HALF (груба ASCII схема) ---------------- */
-        &ug ___    &ug ___    &ug WHITE /*LH_T3*/ &ug ___    &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-        &ug ___    &ug ___    &ug ___    &ug ___    &ug ___ &ug ___                                     &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-        &ug ___    &ug ___    &ug ___    &ug ___    &ug ___ &ug ___                                     &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-        &ug ___    &ug ___    &ug ___    &ug ___    &ug ___ &ug ___                                     &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-        &ug ___    &ug ___    &ug ___    &ug ___    &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-        &ug ___    &ug ___    &ug ___    &ug ___    &ug ___           &ug ___          &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-        /* ---------------- RIGHT HALF ---------------- */
-        &ug ___    &ug ___  &ug ___    &ug ___    &ug ___                                            &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-        &ug ___    &ug ___  &ug ___    &ug ___    &ug ___ &ug ___                                     &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-        &ug ___    &ug ___  &ug ___    &ug ___    &ug ___ &ug ___                                     &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-        &ug ___    &ug ___  &ug ___    &ug ___    &ug ___ &ug ___                                     &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-        &ug ___    &ug ___  &ug ___    &ug ___    &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___ &ug ___  &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
-        &ug ___    &ug ___  &ug ___    &ug ___    &ug ___           &ug ___          &ug ___ &ug ___ &ug ___ &ug ___         &ug ___ &ug ___ &ug ___ &ug ___ &ug ___
+                &ug ___  &ug ___  &ug WHITE  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
+                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
+                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
+                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
+                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
+                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
+                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
+                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
             >;
             layer-id = <LAYER_Lower>;
         };
