@@ -34,27 +34,7 @@
 
 /* Custom Device-tree */
 
-/ {
-    underglow-layer {
-        status = "okay";
-        compatible = "zmk,underglow-layer";
 
-        lower: lower {
-            status = "okay";
-            bindings = <
-                &ug ___  &ug ___  &ug WHITE  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
-                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
-                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
-                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
-                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
-                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
-                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
-                &ug ___  &ug ___  &ug ___    &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___  &ug ___
-            >;
-            layer-id = <LAYER_Lower>;
-        };
-    };
-};
 
 /* Input Listeners */
 
